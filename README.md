@@ -6,7 +6,7 @@
 <a href="https://nanifood.tistory.com/">
 <img src="https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white">
 </a>
-<a href="https://kimnambin.github.io/study/">
+<a href="https://kimnambin.github.io/study/](https://kimnambin.github.io/kimnambin/">
 <img src="https://img.shields.io/badge/MY WEB%20-0078D4?style=for-the-badge&logo=Internet%20Explorer&logoColor=white">
 </a>
 </div>
