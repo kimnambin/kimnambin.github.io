@@ -1,0 +1,45 @@
+.TN {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    background-color: #fff; /* 배경색 추가 */
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.TN_left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img{
+    width: 12px;
+    height: 12px;
+}
+
+.img1{
+    margin-bottom: 15px;
+}
+
+.img2{
+    transform: scaleX(-1);
+    margin-bottom: 15px;
+}
+
+.Menu{
+    width: 48px;
+    height: 48px;
+}
+
+strong{
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+.TN_right{
+    border: 1px solid rgba(0, 0, 0, .1);
+}
