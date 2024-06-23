@@ -1,4 +1,53 @@
 .Profile{
     top: 9rem;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    min-width: 380px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border: 2px solid #009879;
+    align-items: center;
+}
+
+.Profile-table thead td {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 15px; /* 헤더 셀의 패딩 추가 */
+    border: 1px solid #009879;
+}
+
+.Profile-table th,
+.Profile-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #009879;
+}
+
+.Profile-table .자기소개 {
+    padding: 12px 15px; /* 내용 셀의 패딩 추가 */
+    text-align: center;
+    border: 1px solid #009879;
+}
+
+.자기소개 p {
+    margin: 0; /* 단락 사이 여백 제거 */
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+}
+
+.SNS_img{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
 }
