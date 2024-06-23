@@ -3,7 +3,8 @@ import './Skill.css';
 export function Skill(){
     return(
         <div className="skill">
-        <h2>기술스택</h2>
+        <div className="FE"> 프론트엔드</div>
+        <div className="BE"> 백엔드</div>
        </div>
     )
 }

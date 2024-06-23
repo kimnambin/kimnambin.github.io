@@ -8,6 +8,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 30px;
+    border-bottom: 2px solid snow;
 }
 
 .TN_left{

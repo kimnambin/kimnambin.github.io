@@ -8,10 +8,10 @@ function App() {
   return (
    <>
    <TopNav />
-   <Profile />
-   <Skill />
-   <Project />
-   <Footer/>
+   <Profile id="ProfilePage"/>
+   <Skill id="SkillPage"/>
+   <Project id="ProjectPage"/>
+   <Footer id="FooterPage"/>
   
    </>
   );
