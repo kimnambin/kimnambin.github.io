@@ -22,9 +22,9 @@ export function Profile(){
             <tr>
                 <th>📱SNS</th>
                 <td rowSpan="3">
-                <a href="https://github.com/kimnambin"><img className="SNS_img" alt="깃허브" src="https://i.namu.wiki/i/R8rNsOU-rr3kk8KbKtPSyx5J-nYiST8T0Zo5EMl0yRljRr_sM5G_7UjIAR4ODr0eELRuVio_bqRPi_qzzanvog.svg"></img></a>
-                <a href="https://nanifood.tistory.com/"><img className="SNS_img" alt="티스토리" src="https://i.namu.wiki/i/fg3OD3Oi80Oot51FVCIVzNcbittKm3aCFbr6gDGWPlAvpXEm3Bvc-yMnrnEnUR5aOTO4cYk46FvRi9xwu-IVh2WDiTtBqY8m8uvfF4tcgs-Qxqx1rXZMSiaMR1oeFpy8MH8dl5w0zn08FoRn_71KEw.svg"></img></a>
-                <a href="https://drive.google.com/file/d/1_rYxNEEQdgyo87uGeDomsINC0TavDmz3/view"><img className="SNS_img" alt="포폴" src="https://i.namu.wiki/i/QiqUMgfa8UGI-c3DuzX4c_vgG3ZOTBuyNYWNQcSbbw9CJDJeLBnL-RzitNG_forxpA12-24LNeCdGyRrxnUncGSosfqzmy_ncbYzJmGE9QwADMsVVJu_UBB-kNpmSngIUgx5vEm21EeKL9Gc8Dv5Ww.svg"></img></a>
+                <a href="https://github.com/kimnambin"><img className="SNS_img" alt="깃허브" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img></a>
+                <a href="https://nanifood.tistory.com/"><img className="SNS_img2" alt="티스토리" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9931DF3D5B95428108"></img></a>
+                <a href="https://drive.google.com/file/d/1_rYxNEEQdgyo87uGeDomsINC0TavDmz3/view"><img className="SNS_img" alt="포폴" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJKMEQebNO6UwOcYaQmwCRDVCGBOLAyjd7AQ&s"></img></a>
                 </td>
             </tr>
         </tbody>
