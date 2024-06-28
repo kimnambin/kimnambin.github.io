@@ -1,16 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 .Profile{
-    top: 9rem;
+    top: 5rem;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .Profile-table {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 18px;
-    min-width: 380px;
+    min-width: 640px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border: 2px solid #009879;
     align-items: center;
@@ -24,21 +33,31 @@
     border: 1px solid #009879;
 }
 
-.Profile-table th,
-.Profile-table td {
+.Profile-table th {
     padding: 12px 15px;
     text-align: center;
     border: 1px solid #009879;
 }
 
-.Profile-table .자기소개 {
+.Profile-table .자기소개{
     padding: 12px 15px; /* 내용 셀의 패딩 추가 */
     text-align: center;
     border: 1px solid #009879;
 }
 
+.수상내역{
+    border: 1px solid #009879;
+}
+
 .자기소개 p {
     margin: 0; /* 단락 사이 여백 제거 */
+}
+
+.링크{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 5px;
 }
 
 span {
@@ -67,3 +86,97 @@ span {
 a{
     text-decoration: none;
 }
+
+
+.full_skill{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.skill{
+    top: 0rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.FE{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    align-items: center;
+    border : 1px solid #e4e4e4;
+    padding: 10px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 호버 애니메이션 효과 */
+    transform: scale(1);
+}
+
+.FE:hover ,.BE:hover  {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+
+.SNS_img:hover ,.SNS_img2:hover,.SNS_img3:hover {
+    transform: scale(1.25);
+    cursor: pointer; 
+}
+
+.BE{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border : 1px solid #e4e4e4;
+    padding: 10px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 호버 애니메이션 효과 */
+    transform: scale(1);
+}
+
+
+.skill_strong{
+    font-family: 'Poetsen One', sans-serif; 
+    text-align: center;
+    color : #191970;
+    padding: 10px; /* 상 우 하 좌 */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.skill_img{
+    width: 120px;
+    height: 60px;
+    margin: 10px;
+}
+
+.FE1{
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.title_h2{
+    font-family: 'Poetsen One', sans-serif; 
+    text-align: center;
+}
+
+.title_img{
+    width: 20px;
+    height: 20px;
+}
+
+.수상내역_p{
+    font-size: 12px;
+    margin-left: 120px;
+}
+

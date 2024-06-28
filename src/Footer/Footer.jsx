@@ -1,8 +1,8 @@
 import './Footer.css';
 
-export function Footer(){
+export default function Footer(){
     return(
-        <div className='footer'>
+        <div className='footer' id="FooterPage">
         <h2>푸터 하단바</h2>
         </div>
     )
