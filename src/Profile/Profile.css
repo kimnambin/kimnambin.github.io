@@ -125,7 +125,7 @@ a{
     cursor: pointer; 
 }
 
-.SNS_img:hover ,.SNS_img2:hover,.SNS_img3:hover {
+.SNS_img:hover ,.SNS_img2:hover,.SNS_img3:hover,.SNS_img5:hover {
     transform: scale(1.25);
     cursor: pointer; 
 }

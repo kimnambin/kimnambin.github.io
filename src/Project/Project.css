@@ -31,7 +31,7 @@
     margin-bottom: 100px;
 }
 
-h3{
+h4{
     text-align: center;
     font-family: 'Hanna', sans-serif;
     margin-right: 40px;
@@ -40,10 +40,16 @@ h3{
     font-weight: bold;
 }
 
-h3:hover {
+h4:hover {
     text-decoration: underline; 
     transform: scale(1.25);
 }
+
+.pj_top h4.selected {
+    color: blue; 
+    transform: scale(1.25);
+    text-decoration: underline; 
+  }
 
 .pj_mid{
     display: flex;
@@ -66,7 +72,85 @@ h3:hover {
 .pj_mid_right{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: relative; 
     margin-top: 40px;
     width: 50%;
+    justify-content: space-around;
 }
+
+.showData_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+    width: 30%;
+    height: 100%;
+}
+
+.showData_title{
+    text-align: center;
+    font-weight: blod;
+    font-size: 28px;
+}
+
+.showData_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    height: 100%;
+}
+
+.showData_img{
+    width: 45%;
+    height: 60%;
+    margin : 0 auto;
+    display: block;
+}
+
+.showData_p{
+    font-weight: bold;
+    width: 100%;
+    font-size: 16px;
+}
+
+.showData_p0{
+    font-size: 12px;
+    width: 100%;
+    color: #333;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.showData_p2{
+    font-size: 12px;
+    width: 100%;
+    color: #333;
+    border-radius: 15px;
+}
+
+.showData_p3{
+    font-size: 12px;
+    width: 100%;
+    color: blue;
+    border-radius: 15px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+}
+
+.SNS_img5 {
+    position: absolute;
+    
+    left: 50%;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
