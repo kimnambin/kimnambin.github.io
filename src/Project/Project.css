@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 
-.project{
+.project {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 65%;
+    margin-top: 210px;
     height: 100vh;
+    /* min-height: calc(100vh - 540px);  */
     left: 50%;
-    margin-top: 540px;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     align-items: center;
     justify-content: center;
     background-color: white;
-    border : 1px solid #e4e4e4;
+    border: 1px solid #e4e4e4;
     box-shadow: 4px 4px 6px rgba(0,0,0,0.1);
     border-radius: 10px;
 }
+
 
 .pj_top{
     display: flex;
@@ -42,7 +44,7 @@ h4{
 
 h4:hover {
     text-decoration: underline; 
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 .pj_top h4.selected {
@@ -55,7 +57,7 @@ h4:hover {
     display: flex;
     flex-direction: row;
     position: relative;
-    height: 90%;
+    height: 80%;
     /* margin-top: 40px; */
 }
 
@@ -73,7 +75,7 @@ h4:hover {
     display: flex;
     flex-direction: column;
     position: relative; 
-    margin-top: 40px;
+    margin-top: 20px;
     width: 50%;
     justify-content: space-around;
 }
@@ -120,6 +122,8 @@ h4:hover {
     color: #333;
     border-radius: 15px;
     text-align: center;
+    /* word-wrap: break-word; 
+    overflow-wrap: break-word;  */
 }
 
 .showData_p2{
@@ -154,3 +158,62 @@ h4:hover {
     justify-content: center;
   }
   
+
+  @media (max-width: 768px) {
+    .project {
+        width: 90%; 
+        margin-top: 400px; 
+        height: auto; 
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px; 
+    }
+
+    .pj_top {
+        height: auto;
+        margin-bottom: 10px; 
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+    }
+
+    .pj_top h4 {
+        margin-right: 10px;
+        font-size: 12px; 
+    }
+
+    .pj_mid {
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .pj_mid_left, .pj_mid_right {
+        width: 100%; 
+        border-right: none; 
+        margin-right: 0; 
+    }
+
+    .showData_left, .showData_right {
+        margin-right: 0;
+    }
+
+    .showData_img {
+        width: 100%; 
+        height: auto; 
+        margin : 0 auto; 
+    }
+
+    .showData_p, .showData_p0, .showData_p2, .showData_p3 {
+        font-size: 14px; 
+        text-align: left;
+        margin-top: 5px; 
+        width: 100%;
+        justify-content: center; 
+    }
+
+    .right {
+        justify-content: center; 
+        width: 100%;
+    }
+}

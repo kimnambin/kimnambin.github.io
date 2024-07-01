@@ -26,12 +26,14 @@ export default function Project() {
   //제목 선택
   const handleTitleClick = (title) => {
     setSelectedTitle(title);
+    console.log('선택된 제목:', title);
   };
 
   //제목 클릭 시 해당 제목 선택
   const projectTitles = data.map(project => project.title);
   //선택된 제목의 내용에 맞는 거 찾기!!
   const showData = data.find(project => project.title === selectedTitle);
+
 
   return (
     <div className="project" id="ProjectPage">
@@ -43,6 +45,7 @@ export default function Project() {
           <h4 key={index} onClick={() => handleTitleClick(title)} className={selectedTitle === title ? 'selected' : ''}>
             {title}
           </h4>
+          
         ))}
       </div>
 
@@ -65,7 +68,7 @@ export default function Project() {
     
 
           {/* 데이터가 선택이 됐으면 ?  내용 : 프젝 선택하라 */}
- {showData ? (
+          {showData ? (
             <div className='pj_mid_right'>
             <div className='right'><p className='showData_p'>📍소개&기능</p><p class="showData_p2">{showData.intro}</p></div>
             <div className='right'>  <p className='showData_p'>📍개발기간</p> <p class="showData_p2">{showData.period}</p></div>

@@ -1,26 +1,26 @@
 import './Profile.css';
 
 export default function Profile(){
-    return(
-    <div className='Profile'>
-       <table className="Profile-table" id="ProfilePage">
+    return (
+    <div id="ProfilePage" className='Profile'>
+       <table className="Profile-table">
         <thead colSpan={2}>
-        <td colSpan={2}>👑김남빈</td>
+        <td colSpan={2} >👑김남빈</td>
         </thead>
         <tbody>
             <tr>
-                <th>☎️ 연락처</th>
+                <th className='thfont'>☎️ 연락처</th>
                 <td className="자기소개">010-9666-7750</td>
             </tr>
             <tr>
-                <th>👤자기소개</th>
+                <th className='thfont'>👤자기소개</th>
                 <td className="자기소개" colSpan={2}>
                <p><span>집요한 개발자 김남빈</span>입니다.</p>
                <p><span>웹/앱 개발자</span>를 꿈꾸고 있습니다.</p>
                 </td>
             </tr>
             <tr>
-                <th>📜수상내역</th>
+                <th className='thfont'>📜수상내역</th>
                 <td className="수상내역" colSpan={3}>
                <p className='수상내역_p'>2023 학술 경진대회 우수상</p>
                <p className='수상내역_p'>2023 IIBC 국내 학술 대회 우수논문상</p>
@@ -28,7 +28,7 @@ export default function Profile(){
                 </td>
             </tr>
             <tr>
-                <th>🔗링크</th>
+                <th className='thfont'>🔗링크</th>
                 <td className="링크"> 
                 <a href="https://github.com/kimnambin"><img className="SNS_img" alt="깃허브" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img></a>
                 <a href="https://nanifood.tistory.com/"><img className="SNS_img2" alt="티스토리" src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9931DF3D5B95428108"></img></a>
@@ -40,7 +40,7 @@ export default function Profile(){
     </table>
 
     
-    <div className='full_skill'>
+    <div className='full_skill' id="SkillPage">
         <div className='skill_title'>
             <h2 className='title_h2'>💻SKILLS</h2>
         </div>

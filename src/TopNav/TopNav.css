@@ -70,3 +70,12 @@ strong:hover,
 }
 
 
+@media (max-width: 768px) {
+    .img1 , .img2 , .imgp{
+        display: none;
+    }
+
+    .top_p{
+        font-size: 12px;
+    }
+}
