@@ -10,6 +10,11 @@ export default function TopNav() {
             const offset = -90; 
             window.scrollTo({ top: e.offsetTop + offset, behavior: 'smooth' });
         }
+        else if (e && pageId === "SkillPage") {
+            console.log('스킬 페이지임');
+            const offset = -10; 
+            window.scrollTo({ top: e.offsetTop + offset, behavior: 'smooth' });
+        }
         else{
             console.log('프로젝트 부분');
             const offset = -50; 

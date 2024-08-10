@@ -6,7 +6,7 @@
     flex-direction: column;
     position: relative;
     width: 65%;
-    margin-top: 210px;
+    margin-top: 280px;
     height: 100vh;
     /* min-height: calc(100vh - 540px);  */
     left: 50%;
@@ -23,7 +23,7 @@
 .pj_top{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: absolute;
     top:0;
     height: 10%;
@@ -75,15 +75,25 @@ h4:hover {
     display: flex;
     flex-direction: column;
     position: relative; 
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     width: 50%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
 .showData_left{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     margin-right: 20px;
     width: 30%;
     height: 100%;
@@ -110,10 +120,19 @@ h4:hover {
     display: block;
 }
 
+.끄적임이미지{
+    width: 90%;
+    height: 70%;
+    margin : 0 auto;
+    display: block;
+}
+
+
 .showData_p{
     font-weight: bold;
     width: 100%;
     font-size: 16px;
+    margin: auto;
 }
 
 .showData_p0{
@@ -147,22 +166,20 @@ h4:hover {
 }
 
 .SNS_img5 {
-    position: absolute;
-    
-    left: 50%;
-    margin-top: 10px;
+    /* position: absolute;
+    left: 50%; */
+    /* margin: 10px auto; */
     width: 25px;
     height: 25px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
-  
 
   @media (max-width: 768px) {
     .project {
         width: 90%; 
-        margin-top: 400px; 
+        margin-top: 560px; 
         height: auto; 
         left: 50%;
         transform: translateX(-50%);
@@ -170,17 +187,21 @@ h4:hover {
     }
 
     .pj_top {
-        height: auto;
+        height: 60px;
+        width: 100%;
         margin-bottom: 10px; 
         text-align: center;
         align-items: center;
         justify-content: center;
         z-index: 100;
+        /* overflow-x: auto; */
     }
 
+
     .pj_top h4 {
-        margin-right: 10px;
-        font-size: 12px; 
+        margin: 0 10px;
+        font-size: 12px;
+        width: 600px; 
     }
 
     .pj_mid {
@@ -205,11 +226,12 @@ h4:hover {
     }
 
     .showData_p, .showData_p0, .showData_p2, .showData_p3 {
-        font-size: 14px; 
+        font-size: 12px; 
         text-align: left;
         margin-top: 5px; 
         width: 100%;
         justify-content: center; 
+        white-space: pre-line;
     }
 
     .right {

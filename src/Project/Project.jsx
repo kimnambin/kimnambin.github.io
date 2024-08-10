@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import './Project.css';
 
@@ -7,9 +8,9 @@ export default function Project() {
   const [data, setData] = useState([]); //이게 전체 데이터
   const [url] = useState('/data.json'); //이게 데이터를 가져오는 출처
 
-  const [selectedTitle, setSelectedTitle] = useState('밴러지'); //이게 선택된 데이터
+  const [selectedTitle, setSelectedTitle] = useState('끄적임'); //이게 선택된 데이터
 
-    //데이터를 가져오는 로직
+  //데이터를 가져오는 로직
   useEffect(() => {
     fetch(url)
       .then(res => {
@@ -53,34 +54,53 @@ export default function Project() {
         <div className='pj_mid_left'>
 
             {/* 데이터가 선택이 됐으면 ?  내용 : 프젝 선택하라 */}
-          {showData ? (
-            <div>
-              <h2 class='showData_title' >{showData.title}</h2>
-              <img class='showData_img' src={showData.image} alt='' />
-              <p class="showData_p0">{showData.review}</p>
-            </div>
-          ) : (
-            <p>프로젝트를 선택하세요.</p>
-          )}
+            {showData ? (
+             <div>
+                <h2 className='showData_title'>{showData.title}</h2>
+                <img
+                    className={`showData_img ${showData.title === '끄적임' || showData.title === '이상형 월드컵' ? '끄적임이미지' : ''}`}
+                    src={showData.image}
+                    alt=''
+                  />
+                 <p className="showData_p0">
+                    {showData.review.split('\n').map((line, index) => (
+                     <React.Fragment key={index}>
+                        {line}
+                       <br />
+                      </React.Fragment>
+                    ))}
+                 </p>
+               </div>
+              ) : (
+                <p>프로젝트를 선택하세요.</p>
+              )}
+
         </div>
 
     
     
 
           {/* 데이터가 선택이 됐으면 ?  내용 : 프젝 선택하라 */}
-          {showData ? (
+            {showData ? (
             <div className='pj_mid_right'>
-            <div className='right'><p className='showData_p'>📍소개&기능</p><p class="showData_p2">{showData.intro}</p></div>
+            <div className='right'>   <p className='showData_p'>📍소개&기능</p><p class="showData_p2" >{showData.intro}</p></div>
             <div className='right'>  <p className='showData_p'>📍개발기간</p> <p class="showData_p2">{showData.period}</p></div>
             <div className='right'>  <p className='showData_p'>📍플랫폼</p> <p class="showData_p2">{showData.platform}</p></div>
             <div className='right'>  <p className='showData_p'>📍개발인원</p> <p class="showData_p2">{showData.personnel}</p></div>
             <div className='right'>  <p className='showData_p'>📍사용 기술</p> <p class="showData_p3">{showData.skill}</p></div>
-            <div className='right'>  <p className='showData_p'>📍깃허브</p><a href={showData.git}><img className="SNS_img5" alt="깃허브" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></img></a></div>
+            <div className='right'>  <p className='showData_p'>📍깃허브</p>
+            <div style={{width:'100%'}}>
+            <img
+              className="SNS_img5"
+              onClick={() => window.open(showData.git, '_blank')}
+              alt="깃허브"
+              src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+              />
+              </div></div>
               </div>
             ) : (
               <p>프로젝트를 선택하세요.</p>
             )}
-    
 
 
 
